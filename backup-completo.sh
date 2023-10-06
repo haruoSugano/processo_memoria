@@ -1,17 +1,17 @@
 # !/bin/bash
 
 # Diretorio de backup
-backup_path="/home/haruo/Documentos"
+backup_path=""
 
 #Diretorio onde sera guardado
-external_storage="/mnt/backup"
+external_storage=""
 
 #formato do arquivo
 date_format=$(date "+%d-%m-%Y")
 final_archive="backup-$date_format.tar.gz"
 
 # Onde sera armazenado o arquivo log
-log_file="/media/haruo/HARUO_1/bkp/log/daily-backup.log"
+log_file=""
 
 #Checando se o dispositivo está conectado na máquina
 if ! mountpoint -q -- $external_storage; then
